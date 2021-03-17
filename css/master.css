@@ -1,0 +1,590 @@
+/*================================
+title   OUCRC Base Stylesheet
+version 7.0 "Nameless Heckcattle"
+date    2016-03-26
+auther  KON
+================================*/
+
+/*================================
+目次
+    1.  一般設定
+    2.  ヘッダー
+    3.  フッター
+    4.  index
+    5.  products
+    6.  activity
+    7.  members
+    8.  newstudent
+    9.  map
+    10.  links
+================================*/
+
+/*================================
+    1.  一般設定
+================================*/
+body
+{
+    background-color        :#eeeeee;
+    font-family             : "Hiragino Kaku Gothic W3 JIS2004" , "ヒラギノ角ゴシック" , "Hiragino Kaku Gothic ProN" , "游ゴシック" , sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main
+{
+    font-size               : 11.5pt;
+    background              : #ffffff;
+    box-shadow              : 0px 0px 4px #cccccc;
+    -moz-box-shadow         : 0px 0px 4px #cccccc;
+    -webkit-box-shadow      : 0px 0px 4px #cccccc;
+    -webkit-border-radius   : 6px;
+    -moz-border-radius      : 6px;
+    border-radius           : 6px;
+    margin-bottom           : 24px;
+}
+
+h1
+{
+    font-family             : "游ゴシック" , "ヒラギノ角ゴシック" , "Hiragino Kaku Gothic ProN" , "メイリオ" , "Meiryo" , sans-serif;
+}
+
+p
+{
+    font-size               : 1.0em;
+    line-height             : 1.8;
+    margin                  : 0px;
+    padding                 : 0px;
+}
+
+strong
+{
+    font-family             : "游ゴシック" , "ヒラギノ角ゴシック" , "Hiragino Kaku Gothic ProN" , "メイリオ" , "Meiryo" , sans-serif;
+}
+
+a
+{
+    text-decoration         : none;
+    color                   : #0071c5;
+}
+
+li
+{
+    list-style-type         : none;
+}
+
+table
+{
+    margin                  : 24px 0px;
+}
+
+td
+{
+    padding                 : 4px 1em;
+}
+
+small
+{
+    font-size               : 1em;
+}
+
+figure
+{
+    margin                  : 0;
+}
+
+main>div>section
+{
+    margin                  : 28px 0px;
+}
+
+section>h1
+{
+    font-size               : 1.8em;
+    padding-left            : 10px;
+    /*border-bottom           : solid 1px #cccccc;*/
+    border-left             : solid 16px #666666;
+}
+
+section>section>h1
+{
+    font-size               : 1.3em;
+    padding-left            : 10px;
+    /*border-bottom           : solid 1px #cccccc;*/
+    border-left             : solid 8px #666666;
+}
+
+section>section
+{
+    margin                  : 0px 8px;
+}
+
+section>article
+{
+    margin-top              : 2em;
+    padding                 : 0px 1em;
+    border-left             : solid 1px #cccccc;
+}
+
+article>header>h1
+{
+    font-size               : 1.4em;
+    margin                  : 0px;
+    padding                 : 0px;
+    border                  : none;
+}
+
+tbody>tr:nth-child(odd)
+{
+    background              : #eeeeee;
+}
+
+.thumb a:hover img
+{
+    opacity                 : 0.6;
+    transition              : .2s;
+}
+
+/*================================
+    2.  ヘッダー
+================================*/
+header
+{
+    width                   : 100%;
+}
+
+header a:link
+{
+    color                   : #000000;
+}
+
+header a:visited
+{
+    color                   : #000000;
+}
+
+header a:hover
+{
+    color                   : #000000;
+}
+
+header a:active
+{
+    color                   : #000000;
+}
+
+#mainMenubar
+{
+    position                : relative;
+    width                   : 960px;
+    height                  : 45px;
+    display                 : block;
+    margin                  : 0px auto 0.625em auto;
+    text-align              : center;
+    overflow                : hidden;
+    position                : static;
+    pointer-events          : none;
+}
+
+#mainMenubar a
+{
+    pointer-events          : auto;
+}
+
+li.current
+{
+    z-index                 : 1;
+}
+
+li.back
+{
+    border-bottom           : 2px solid #0071c5;
+    padding                 : 0px;
+    overflow                : hidden;
+    position                : absolute;
+    pointer-events          : none;
+}
+
+header>nav>ul
+{
+    text-align              : center;
+    list-style              : disc;
+    margin                  : 0px;
+    padding                 : 0px;
+    pointer-events          : none;
+}
+
+header>nav>ul>li
+{
+    position                : relative;
+    margin                  : 0px;
+    list-style              : none;
+    display                 : inline;
+    font-size               : 14pt;
+    color                   : #434354;
+    background              : none;
+
+    padding-right           : 1em;
+    padding-left            : 1em;
+
+    display                 : -moz-inline-box;
+    display                 : inline-block;
+}
+
+.circle_logo1
+{
+    width                   : 640px;
+    margin                  : 5px 10px;
+}
+.circle_logo2
+{
+    width                   : 680px;
+    margin                  : 5px 10px;
+}
+
+.topmenu
+{
+    width                   : 100%;
+    background              : #ffffff;
+    box-shadow              : 0px 0px 8px #cccccc;
+    -webkit-box-shadow      : 0px 0px 8px #cccccc;
+    margin-bottom           : 24px;
+}
+
+.topnav
+{
+    margin                  : 0px auto 0px auto;
+    width                   : 960px;
+}
+
+
+/*================================
+    3.  フッター
+================================*/
+footer
+{
+    width                   : 100%;
+    margin-top: auto;
+}
+
+footer a:link
+{
+    color                   : #000000;
+}
+
+footer a:visited
+{
+    color                   : #000000;
+}
+
+footer a:hover
+{
+    color                   : #000000;
+}
+
+footer a:active
+{
+    color                   : #000000;
+}
+
+.footer_menu
+{
+    width                   : 100%;
+    background              : #ffffff;
+    box-shadow              : 0px 0px 8px #cccccc;
+    -webkit-box-shadow      : 0px 0px 8px #cccccc;
+    margin-top              : 24px;
+    padding                 : 12px 0px;
+}
+.footer_nav
+{
+    text-align              : center;
+    margin                  : 0px auto 0px auto;
+    width                   : 960px;
+    vertical-align          : baseline;
+}
+
+
+/*================================
+    4.  index
+================================*/
+ul.slider
+{
+    padding                 : 0px;
+    margin                  : 0px;
+}
+
+.banner_slider
+{
+    position                : relative;
+    width                   : 100%;
+    margin-top              : 10px;
+    margin-bottom           : 15px;
+}
+
+.twitter
+{
+    width                   : 240px;
+    position                : absolute;
+    top                     : 0px;
+    right                   : 0px;
+    -webkit-box-sizing      : border-box;
+    -moz-box-sizing         : border-box;
+    -o-box-sizing           : border-box;
+    -ms-box-sizing          : border-box;
+    box-sizing              : border-box;
+}
+
+.update-time
+{
+    font-size               : 0.9em;
+}
+
+.top_article
+{
+    margin-bottom           : 0.8em;
+}
+
+/*================================
+    5.  products
+================================*/
+#bazaar h1
+{
+    font-size               : 1.5em;
+    padding-left            : 10px;
+    /*border-bottom           : solid 1px #cccccc;*/
+    border-left             : solid 8px #666666;
+}
+
+#works h1
+{
+    font-size               : 1.5em;
+    padding-left            : 10px;
+    /*border-bottom           : solid 1px #cccccc;*/
+    border-left             : solid 8px #666666;
+}
+
+#works section
+{
+    margin                  : 0px;
+}
+
+#works section h1
+{
+    font-size               : 1.4em;
+    padding-left            : 10px;
+    /*border-bottom           : solid 1px #cccccc;*/
+    border-left             : solid 4px #666666;
+}
+
+#comike h1
+{
+    font-size               : 1.5em;
+    padding-left            : 10px;
+    /*border-bottom           : solid 1px #cccccc;*/
+    border-left             : solid 8px #666666;
+}
+
+.bazaar_thumb div
+{
+    width                   : 920px;
+    height                  : 240px;
+    margin-bottom           : 20px;
+    background              : #000000;
+    border-radius           : 5px;
+    -webkit-border-radius   : 5px;
+    -moz-border-radius      : 5px;
+}
+
+.bazaar_thumb img
+{
+    border-radius           : 5px;
+    -webkit-border-radius   : 5px;
+    -moz-border-radius      : 5px;
+}
+
+.comike_thumb
+{
+    width                   : 220px;
+    height                  : 220px;
+    margin-bottom           : 20px;
+    background              : #000000;
+    border-radius           : 5px;
+    -webkit-border-radius   : 5px;
+    -moz-border-radius      : 5px;
+}
+
+.comike_thumb img
+{
+    height                  : 220px;
+    border-radius           : 5px;
+    -webkit-border-radius   : 5px;
+    -moz-border-radius      : 5px;
+}
+
+ul.comike_slider
+{
+    padding                 : 0px;
+    margin                  : 0px;
+}
+
+.comike_slider img
+{
+    height                  : 480px;
+    margin                  : 0 auto;
+}
+
+.comike_title>h1
+{
+    font-size               : 3.0em;
+    text-align              : center;
+    margin-top              : 1em;
+    margin-bottom           : 0;
+}
+
+.comike_title>h2
+{
+    font-family             : "游ゴシック" , "ヒラギノ角ゴシック" , "Hiragino Kaku Gothic ProN" , "メイリオ" , "Meiryo" , sans-serif;
+    font-size               : 1.6em;
+    text-align              : center;
+    margin                  : 0;
+}
+
+#grid-content div
+{
+    width                   : 215px;
+    height                  : auto;
+    margin                  : 10px 10px;
+}
+
+#grid-content a:focus
+{
+    outline                 : none;
+}
+
+
+/*================================
+    6.  activity
+================================*/
+
+
+/*================================
+    7.  members
+================================*/
+/*members.htmlの現役部員*/
+/*ハンドル*/
+#active_member td:nth-of-type(1)
+{
+    width                   : 120px;
+}
+
+/*役職*/
+#active_member td:nth-of-type(2)
+{
+    width                   : 80px;
+}
+
+/*してること*/
+#active_member td:nth-of-type(3)
+{
+    width                   : 400px;
+}
+
+/*ひとこと*/
+#active_member td:nth-of-type(4)
+{
+    width                   : 220px;
+}
+
+#active_member td
+{
+    padding                 : 4px 1em;
+}
+
+#active_member>section>h1
+{
+    font-size               : 1.3em;
+    margin-left             : 8px;
+    padding-left            : 10px;
+    /*border-bottom           : solid 1px #cccccc;*/
+    border-left             : solid 8px #666666;
+}
+
+/*members.htmlのOBさん*/
+/*ハンドル*/
+#ob td:nth-of-type(1)
+{
+    width                   : 120px;
+    padding                 : 4px 1em;
+}
+
+/*入学年度*/
+#ob td:nth-of-type(2)
+{
+    width                   : 80px;
+    padding                 : 4px 1em;
+}
+
+
+/*================================
+    8.  newstudent
+================================*/
+.welcome_students>h1
+{
+    display                 : inline-block;
+}
+
+.welcome_students>table
+{
+    margin                  : 12px 24px;
+}
+
+.welcome_students thead>tr
+{
+    background              : #eeeeee;
+}
+
+.welcome_students>table>tbody>tr:nth-child(odd)
+{
+    background              : #ffffff;
+}
+
+.welcome_students_lastupdate
+{
+    display                 : inline;
+    font-size               : 0.9em;
+    margin-left             : 1em;
+}
+
+
+/*================================
+    9.  map
+================================*/
+.map_pdf
+{
+    margin-left             : 4em;
+}
+/*================================
+    10.  links
+================================*/
+.linkpage li
+{
+    padding-top             : 10px;
+    font-size               : 1.2em;
+}
+
+.linkpage img
+{
+    float                   : left;
+    margin-right            : 20px;
+}
+
+.okayama_univ
+{
+    border-color            : #0071c5;
+}
+
+.okayama_univ_of_science
+{
+    border-color            : #abce03;
+}
